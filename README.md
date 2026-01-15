@@ -2,6 +2,8 @@ Bu proje, Nesneye Dayalı Programlama-II dersi final ödevi için hazırladığ�
 
 Projenin temel amacı, derste öğrendiğimiz ORM (Object Relational Mapping) yapısını kullanarak SQL kodlarıyla boğuşmadan, nesne mantığıyla veritabanı işlemlerini gerçekleştirmektir.
 
+Proje Maven standartlarına uygun oluşturulduğu için, istenilen entity, dao, util ve app paketleri src/main/java dizini altında; hibernate.cfg.xml dosyası ise src/main/resources içerisinde yer almaktadır.
+
 Çalışma Prensibi Şöyledir:
 Bağlantı ve Tablo Kurulumu: Programda HibernateUtil sınıfı kullandım. Program çalıştırıldığında bu sınıf devreye giriyor ve SQLite veritabanı dosyasını (smartlibrary.db) otomatik buluyor. Eğer tablolar (Kitaplar, Öğrenciler, Ödünçler) henüz yoksa, Hibernate bunları kodlarımdaki sınıflara bakarak otomatik oluşturuyor.
 
